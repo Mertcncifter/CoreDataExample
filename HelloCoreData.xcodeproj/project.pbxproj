@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C54BD21F2919771D007C3DC2 /* HelloCoreDateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54BD21E2919771D007C3DC2 /* HelloCoreDateApp.swift */; };
+		C54BD21F2919771D007C3DC2 /* HelloCoreDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54BD21E2919771D007C3DC2 /* HelloCoreDataApp.swift */; };
 		C54BD2212919771D007C3DC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54BD2202919771D007C3DC2 /* ContentView.swift */; };
 		C54BD2232919771E007C3DC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C54BD2222919771E007C3DC2 /* Assets.xcassets */; };
 		C54BD2262919771E007C3DC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C54BD2252919771E007C3DC2 /* Preview Assets.xcassets */; };
+		C54BD22E2919798E007C3DC2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54BD22D2919798E007C3DC2 /* CoreDataManager.swift */; };
+		C54BD231291979F5007C3DC2 /* HelloCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C54BD22F291979F5007C3DC2 /* HelloCoreDataModel.xcdatamodeld */; };
+		C54BD23329198565007C3DC2 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54BD23229198565007C3DC2 /* MovieDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C54BD21B2919771D007C3DC2 /* HelloCoreDate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCoreDate.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C54BD21E2919771D007C3DC2 /* HelloCoreDateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCoreDateApp.swift; sourceTree = "<group>"; };
+		C54BD21B2919771D007C3DC2 /* HelloCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54BD21E2919771D007C3DC2 /* HelloCoreDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCoreDataApp.swift; sourceTree = "<group>"; };
 		C54BD2202919771D007C3DC2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C54BD2222919771E007C3DC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C54BD2252919771E007C3DC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C54BD22D2919798E007C3DC2 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		C54BD230291979F5007C3DC2 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		C54BD23229198565007C3DC2 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +41,7 @@
 		C54BD2122919771D007C3DC2 = {
 			isa = PBXGroup;
 			children = (
-				C54BD21D2919771D007C3DC2 /* HelloCoreDate */,
+				C54BD21D2919771D007C3DC2 /* HelloCoreData */,
 				C54BD21C2919771D007C3DC2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +49,23 @@
 		C54BD21C2919771D007C3DC2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C54BD21B2919771D007C3DC2 /* HelloCoreDate.app */,
+				C54BD21B2919771D007C3DC2 /* HelloCoreData.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C54BD21D2919771D007C3DC2 /* HelloCoreDate */ = {
+		C54BD21D2919771D007C3DC2 /* HelloCoreData */ = {
 			isa = PBXGroup;
 			children = (
-				C54BD21E2919771D007C3DC2 /* HelloCoreDateApp.swift */,
+				C54BD22C2919797E007C3DC2 /* Managers */,
+				C54BD21E2919771D007C3DC2 /* HelloCoreDataApp.swift */,
 				C54BD2202919771D007C3DC2 /* ContentView.swift */,
 				C54BD2222919771E007C3DC2 /* Assets.xcassets */,
 				C54BD2242919771E007C3DC2 /* Preview Content */,
+				C54BD22F291979F5007C3DC2 /* HelloCoreDataModel.xcdatamodeld */,
+				C54BD23229198565007C3DC2 /* MovieDetail.swift */,
 			);
-			path = HelloCoreDate;
+			path = HelloCoreData;
 			sourceTree = "<group>";
 		};
 		C54BD2242919771E007C3DC2 /* Preview Content */ = {
@@ -67,12 +76,20 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C54BD22C2919797E007C3DC2 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C54BD22D2919798E007C3DC2 /* CoreDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C54BD21A2919771D007C3DC2 /* HelloCoreDate */ = {
+		C54BD21A2919771D007C3DC2 /* HelloCoreData */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C54BD2292919771E007C3DC2 /* Build configuration list for PBXNativeTarget "HelloCoreDate" */;
+			buildConfigurationList = C54BD2292919771E007C3DC2 /* Build configuration list for PBXNativeTarget "HelloCoreData" */;
 			buildPhases = (
 				C54BD2172919771D007C3DC2 /* Sources */,
 				C54BD2182919771D007C3DC2 /* Frameworks */,
@@ -82,9 +99,9 @@
 			);
 			dependencies = (
 			);
-			name = HelloCoreDate;
+			name = HelloCoreData;
 			productName = HelloCoreDate;
-			productReference = C54BD21B2919771D007C3DC2 /* HelloCoreDate.app */;
+			productReference = C54BD21B2919771D007C3DC2 /* HelloCoreData.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +119,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C54BD2162919771D007C3DC2 /* Build configuration list for PBXProject "HelloCoreDate" */;
+			buildConfigurationList = C54BD2162919771D007C3DC2 /* Build configuration list for PBXProject "HelloCoreData" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +132,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C54BD21A2919771D007C3DC2 /* HelloCoreDate */,
+				C54BD21A2919771D007C3DC2 /* HelloCoreData */,
 			);
 		};
 /* End PBXProject section */
@@ -137,8 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C54BD22E2919798E007C3DC2 /* CoreDataManager.swift in Sources */,
 				C54BD2212919771D007C3DC2 /* ContentView.swift in Sources */,
-				C54BD21F2919771D007C3DC2 /* HelloCoreDateApp.swift in Sources */,
+				C54BD23329198565007C3DC2 /* MovieDetail.swift in Sources */,
+				C54BD21F2919771D007C3DC2 /* HelloCoreDataApp.swift in Sources */,
+				C54BD231291979F5007C3DC2 /* HelloCoreDataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +286,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HelloCoreDate/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"HelloCoreData/Preview Content\"";
 				DEVELOPMENT_TEAM = H8M6HD4VMU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -280,7 +300,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mertcncifter.HelloCoreDate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mertcncifter.HelloCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -295,7 +315,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HelloCoreDate/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"HelloCoreData/Preview Content\"";
 				DEVELOPMENT_TEAM = H8M6HD4VMU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -309,7 +329,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mertcncifter.HelloCoreDate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mertcncifter.HelloCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -320,7 +340,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C54BD2162919771D007C3DC2 /* Build configuration list for PBXProject "HelloCoreDate" */ = {
+		C54BD2162919771D007C3DC2 /* Build configuration list for PBXProject "HelloCoreData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C54BD2272919771E007C3DC2 /* Debug */,
@@ -329,7 +349,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C54BD2292919771E007C3DC2 /* Build configuration list for PBXNativeTarget "HelloCoreDate" */ = {
+		C54BD2292919771E007C3DC2 /* Build configuration list for PBXNativeTarget "HelloCoreData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C54BD22A2919771E007C3DC2 /* Debug */,
@@ -339,6 +359,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C54BD22F291979F5007C3DC2 /* HelloCoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C54BD230291979F5007C3DC2 /* Model.xcdatamodel */,
+			);
+			currentVersion = C54BD230291979F5007C3DC2 /* Model.xcdatamodel */;
+			path = HelloCoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C54BD2132919771D007C3DC2 /* Project object */;
 }

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:">
+      location = "self:/Users/mertcancifter/SwiftUI/Core Data/HelloCoreDate/HelloCoreData.xcodeproj">
    </FileRef>
 </Workspace>

@@ -1,6 +1,6 @@
 //
-//  HelloCoreDateApp.swift
-//  HelloCoreDate
+//  HelloCoreDataApp.swift
+//  HelloCoreData
 //
 //  Created by mert can çifter on 7.11.2022.
 //
@@ -11,7 +11,7 @@ import SwiftUI
 struct HelloCoreDateApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(coreDM: CoreDataManager())
         }
     }
 }
